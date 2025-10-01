@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maharlika Insurance</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<div id="splash" aria-hidden="true">
+  <div class="splash-logo">
+    <!-- The SVG draws a white outline that follows the PNG's alpha -->
+    <svg class="logo-svg" viewBox="0 0 512 512" role="img" aria-label="Maharlika logo">
+      <defs>
+        <!-- Dilate the PNG's alpha to make an outline, then paint it white -->
+        <filter id="png-stroke" filterUnits="userSpaceOnUse">
+          <!-- Use the element's alpha as the source -->
+          <feMorphology in="SourceAlpha" operator="dilate" radius="6" result="thick" />
+          <!-- Tint to white while preserving alpha -->
+          <feColorMatrix in="thick" type="matrix"
+            values="0 0 0 0 1
+                    0 0 0 0 1
+                    0 0 0 0 1
+                    0 0 0 1 0" result="whiteStroke"/>
+          <feGaussianBlur in="whiteStroke" stdDeviation="0.4" result="softStroke"/>
+          <feMerge>
+            <feMergeNode in="softStroke"/>
+          </feMerge>
+        </filter>
+      </defs>
+
+      <!-- Bottom layer: outlined version (filter) -->
+      <image href="CIRCLE.png" x="0" y="0" width="512" height="512" filter="url(#png-stroke)"/>
+      <!-- Top layer: the normal logo -->
+      <image href="CIRCLE.png" x="0" y="0" width="512" height="512"/>
+    </svg>
+  </div>
+</div>
+
+</div>
+
+  <header class="header">
+    <div class="page header-inner">
+      <a href="#home" class="logo-area">
+        <img src="LOGO.png" alt="Maharlika Logo" class="logo">
+        <span class="brand"</span>
+      </a>
+
+      <nav class="nav">
+        <a href="#services" class="has-caret">Services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <div class="utilities">
+        <a href="#">Help</a>
+        <span class="divider"></span>
+        <a href="#">English</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SECTION 1: HOME / HERO -->
+  <section id="home" class="hero snap">
+    <div class="page hero-grid">
+      <div class="hero-left">
+        <div class="hero-copy">
+          <h1>Maharlika Insurance:<br><span>The Trusted Way to Protect Your Future.</span></h1>
+          <p>where your journey to a secure future begins,<br>connected every step.</p>
+        </div>
+      </div>
+
+      <aside class="hero-card">
+        <h3>REGISTER NOW!</h3>
+        <img src="QR.jpg" alt="Register QR code">
+      </aside>
+    </div>
+    <div class="accent-bar"></div>
+  </section>
+
+  <!-- SECTION 2: SERVICES -->
+  <section id="services" class="section snap">
+    <div class="page">
+      <h2>Our Services</h2>
+      <p class="lead">Coverage options designed for families and businesses.</p>
+      <div class="cards">
+        <article class="card"><h4>Life</h4><p>Protect loved ones with tailored plans.</p></article>
+        <article class="card"><h4>Health</h4><p>Accessible care, when you need it.</p></article>
+        <article class="card"><h4>Property</h4><p>Secure homes, vehicles, and assets.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: ABOUT -->
+  <section id="about" class="section alt snap">
+    <div class="page">
+      <h2>About Maharlika</h2>
+      <p class="lead">Rooted in trust and service. We help communities thrive with simple, reliable protection.</p>
+    </div>
+  </section>
+
+  <!-- SECTION 4: CONTACT -->
+  <section id="contact" class="section snap">
+    <div class="page contact-grid">
+      <div>
+        <h2>Contact Us</h2>
+        <p class="lead">We’re here to help—reach out anytime.</p>
+        <ul class="contact-list">
+          <li>📞 +63 900 000 0000</li>
+          <li>✉️ support@maharlika.ph</li>
+          <li>📍 Digos City, Philippines</li>
+        </ul>
+      </div>
+      <form class="contact-form" onsubmit="return false;">
+        <label>Full name<input required></label>
+        <label>Email<input type="email" required></label>
+        <label>Message<textarea rows="4"></textarea></label>
+        <button class="btn">Send</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
