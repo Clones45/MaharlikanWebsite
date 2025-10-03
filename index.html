@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Maharlikan AssuredLife — Home</title>
+
+  <link rel="icon" type="image/png" href="lf.png">
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Professional serif for brand -->
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- Splash (Home only) -->
+<div id="splash" aria-hidden="true">
+  <div class="splash-logo" role="img" aria-label="Maharlikan logo">
+    <svg class="logo-svg" viewBox="0 0 512 512" aria-hidden="true" focusable="false">
+      <image href="lf.png" x="0" y="0" width="512" height="512"/>
+    </svg>
+  </div>
+</div>
+
+<header class="header">
+  <div class="header-inner">
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    <a href="index.html" class="logo-area">
+      <img src="lf.png" alt="Logo" class="logo" width="128" height="128">
+      <span class="brand">Maharlikan AssuredLife</span>
+    </a>
+    <nav class="nav" role="navigation">
+      <a href="index.html" data-page="index">Home</a>
+      <a href="about.html" data-page="about">About</a>
+      <a href="services.html" data-page="services">Services</a>
+      <a href="contact.html" data-page="contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main class="hero snap" aria-label="Welcome">
+  <div class="page hero-grid">
+    <div class="hero-left reveal">
+      <div class="hero-copy">
+        <h1>Maharlikan AssuredLife:<br><span></span></h1>
+        <p>“Layunin ng Maharlikan AssuredLife ay ASSURED ka!”</p>
+      </div>
+    </div>
+
+    <aside class="hero-card reveal" aria-label="Registration">
+      <h3>REGISTER NOW!</h3>
+      <img src="QR.jpg" alt="QR code to register" loading="lazy" class="qr-img" width="600" height="600">
+    </aside>
+  </div>
+  <div class="accent-bar" aria-hidden="true"></div>
+</main>
+
+<footer class="site-footer">
+  <div class="page">&copy; <span id="year"></span> Maharlikan AssuredLife. All rights reserved.</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

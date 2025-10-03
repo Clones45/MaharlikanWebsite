@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Maharlikan AssuredLife</title>
+
+  <link rel="icon" type="image/png" href="lf.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&display=swap" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <body class="about-page">
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header-inner">
+      <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <a href="index.html" class="logo-area">
+        <img src="lf.png" alt="Logo" class="logo" width="128" height="128">
+        <span class="brand">Maharlikan AssuredLife</span>
+      </a>
+      <nav class="nav" role="navigation">
+        <a href="index.html" data-page="index">Home</a>
+        <a href="about.html" data-page="about" class="active">About</a>
+        <a href="services.html" data-page="services">Services</a>
+        <a href="contact.html" data-page="contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Keep your existing top hero ABOVE this if you have one -->
+
+  <!-- Image-only banner just under the hero -->
+  <section class="about-promo about-promo--image-only">
+    <div class="page about-promo__inner">
+      <div class="about-promo__image">
+        <!-- IMPORTANT: use the correct file extension -->
+        <img src="about-hero.png" alt="About Maharlikan AssuredLife banner" class="about-promo__card" loading="eager" decoding="async">
+      </div>
+    </div>
+    <div class="about-promo__cut" aria-hidden="true"></div>
+  </section>
+
+  <!-- Main About body with watermark -->
+  <main class="section alt snap bg-logo" aria-labelledby="about-title">
+    <div class="page">
+      <h2 id="about-title" class="reveal">About Maharlika</h2>
+      <p class="lead reveal">Maharlikan AssuredLife is built on a simple promise:</p>
+
+      <p class="reveal">
+        “Layunin ng Maharlikan AssuredLife ay <strong>ASSURED</strong> ka!” We are a Filipino assurance company
+        committed to providing peace of mind and dignity for every family. Our mission is to ensure that when life’s
+        most difficult moments arrive, our planholders and their loved ones are protected, guided, and supported with
+        compassion and respect.
+      </p>
+
+      <p class="reveal">
+        Grounded in Filipino values of <em>malasakit</em>, <em>kalinga</em>, and <em>bayanihan</em>, Maharlikan
+        AssuredLife offers reliable assurance plans that are both affordable and meaningful. More than just financial
+        protection, we provide families with the confidence that their future is secured and their memories honored.
+      </p>
+
+      <h3 class="reveal">Being ASSURED means:</h3>
+      <ul class="reveal">
+        <li>Affordable plans for every Filipino family</li>
+        <li>Security and peace of mind when it matters most</li>
+        <li>Support with compassion and integrity</li>
+        <li>Unity in service, reflecting true Filipino values</li>
+        <li>Respect for every life and legacy</li>
+        <li>Empowerment through transparent and dependable care</li>
+        <li>Dignity in every step of the journey</li>
+      </ul>
+
+      <p class="reveal">
+        Maharlikan AssuredLife — because every Filipino deserves to be <strong>ASSURED</strong>.
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="page">&copy; <span id="year"></span> Maharlikan AssuredLife. All rights reserved.</div>
+  </footer>
+</body>
+</html>
